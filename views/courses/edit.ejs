@@ -1,0 +1,13 @@
+<%- include('../partials/header', { title }) %>
+
+<a href="/courses" class="page-back-link text-decoration-none">&larr; Back to courses</a>
+<h1 class="h3 mb-4">Edit Course</h1>
+
+<%- include('../partials/course-form', {
+  formAction: '/courses/' + course.id,
+  submitLabel: 'Update Course',
+  errors,
+  course,
+}) %>
+
+<%- include('../partials/footer') %>
