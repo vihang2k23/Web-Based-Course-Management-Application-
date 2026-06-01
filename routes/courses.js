@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import * as courseController from '../controllers/courseController.js';
+                                                                                                                    import * as courseController from '../controllers/CourseController.js';
 
 const router = Router();
 
@@ -11,3 +11,4 @@ router.post('/:id/delete', courseController.destroy);
 router.post('/:id', courseController.update);
 
 export default router;
+                                                    
